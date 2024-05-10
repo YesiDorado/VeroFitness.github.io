@@ -1,0 +1,98 @@
+.nutricion {
+    transition: all ease-in-out;
+
+    &-nutricion {
+    background: url(../assets/nutricion.jpg) no-repeat left;
+    background-size: 60%;
+    background-color: var(--blanco);
+    overflow: hidden;
+    padding: 10em;
+
+        @include media() {
+        background-size: 100%;
+        padding: 100px 40px;
+        }
+    }
+    &-contenedor {
+    width: 55%;
+    float: right;
+    background-color: var(--blanco);
+    padding: 3em;
+
+    @include media() {
+        width: 100%;
+    }
+    }
+    &-h2 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: 900;
+
+    }
+    &-h3 {
+    font-weight: 500;
+    }
+    &-p {
+    font-size: 0.5em;
+    }
+    &-lista-depo{
+    padding: 0 0 0 1.5rem;
+    }
+
+    &-a {
+        button {
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+            padding: 0.3em 1em;
+            margin: 1em;
+            border: 1px solid rgb(238, 174, 202);
+            border-radius: 5px;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+            color: rgb(238, 174, 202);
+            text-decoration: none;
+            transition: 0.3s ease all;
+            z-index: 1;
+    
+        &::before {
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: "";
+            background: linear-gradient(
+                90deg,
+                rgba(238, 174, 202, 0.6) 0%,
+                rgba(148, 187, 233, 0.6) 100%
+            );
+            z-index: -1;
+        }
+    
+        &:hover,:focus {
+            color: white;
+        }
+    
+        &:hover::before,:focus::before {
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+        }
+    
+        &:active {
+            transform: scale(0.9);
+        }
+        }
+    }
+    
+    @include media() {
+        display: block;
+    }
+}
