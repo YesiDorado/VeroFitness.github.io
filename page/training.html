@@ -14,47 +14,43 @@
     <body>
         <header class="Header">
             <div class="Header-wrapper wrapper">
-                <button class="Header-menu">
-                    <svg class="Header-hamburguesa" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                    </svg>
-                </button>
-
-                <h1 class="Header-h1">
-                    <a class="Header-logo" href="#" title="Vero Fitness">
-                        <img class="Header-img" src="../assets/logochico.png" alt="Vero Fitness" />
-                    </a>
-                </h1>
-
-                <nav class="Header-nav">
-                    <ul class="Header-ul">
-                        <li class="Header-li">
-                            <a class="Header-link" href="../index.html" title="Inicio">Inicio</a>
-                        </li>
-                        <li class="Header-li">
-                            <a class="Header-link" href="../page/sobremi.html" title="sobre mi">Sobre mi</a>
-                        </li>
-                        <li class="Header-li">
-                            <a class="Header-link" href="../page/experiencias.html" title="Experiencias">Experiencias</a>
-                        </li>
-                        <li class="Header-li">
-                            <button class="Header-link">Info</button>
-
-                    <ul class="Header-submenu">
-                        <li class="Header-subli">
-                            <a class="Header-info" href="../page/nutricion.html" title="nutri">Nutrición</a>
-                        </li>
-                        <li class="Header-subli">
-                            <a class="Header-info" href="#" title="nutri">Training</a>
-                        </li>
-                        <li class="Header-subli">
-                            <a class="Header-info" href="../page/contacto.html" title="nutri">Contacto</a>
-                        </li>
-                    </ul>
-                        </li>
-                    </ul>
+    
+                <a class="Header-logo" href="#" title="Vero Fitness">
+                    <img class="Header-img" src="assets/logochico.png" alt="Vero Fitness">
+                </a>
+                
+            
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="letras active" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="letras" href="../page/sobremi.html">Sobre mi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="letras" href="../page/experiencias.html">Experiencias</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="letras dropdown-toggle" href="../page/info.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Info
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="../page/nutricion.html">Nutrición</a></li>
+                                        <li><a class="dropdown-item" href="#">Training</a></li>
+                                        <li><a class="dropdown-item" href="../page/contacto.html">Contacto</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
-            </div>
+            </div>    
         </header>
         
         <section class="body">
